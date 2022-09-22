@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(204, 204, 204, 0.492);
+    overflow: overlay;
+} 
+::-webkit-scrollbar{
+    width: 8px !important;
+}
+::-webkit-scrollbar-track{
+    background: transparent !important;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(119, 119, 119);
+    border-radius: 80px !important;
+}
+.header{
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 22vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    padding-top: 22px;
+    position: relative;
+    top: 5%;
+    color: white !important;
+}
+/* .car{
+    height: 60vh !important;
+    overflow: hidden;
+} */
+.carousel-item img{
+    width: 100%;
+    height: 80vh;
+}
+#est {
+    padding: 50px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#est .est-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    transition: 0.4s;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    border: 1px solid rgb(247, 1, 1);
+    border-radius: 4px;
+    margin: 15px 0;
+    box-shadow: rgba(251, 61, 61, 0.343) 0px 3px 6px, rgba(247, 74, 74, 0.585) 0px 3px 6px;
+}
+.est-box:hover{
+    box-shadow: rgba(251, 61, 61, 0.499) -10px 10px 14px,
+    rgba(247, 74, 74, 0.464) 0px 10px 22px !important;
+    transform: translateY(-10px) !important;
+}
+#est .est-box img {
+    width: 100%;
+    height: 98.6px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    color: white;
+    overflow: hidden;
+    padding-top: 13px;
+    background-color: rgb(51, 51, 51) !important;
+}
+footer a{
+    color: rgba(255, 255, 255, 0.55) !important;
+    text-decoration: none;
+    font-size: medium;
+}
+footer a:hover{
+    color: rgba(255, 0, 0, 0.55) !important;
+    text-decoration: underline;
+    font-size: large !important;
+}
+a:hover{
+    color: blue !important;
+    text-decoration: underline;
+    font-size: large !important;
+}
+a:active{
+    color: blue !important;
+    text-decoration: underline;
+    font-size: medium;
+}
+.Copyright{
+    padding: 20px;
+}
+.payBillForm input,button{
+    max-width: 50%;
+}
