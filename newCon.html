@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sustainable Power</title>
-    
+
 <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="bootstrap.css">
 
@@ -24,130 +24,228 @@
 <!-- css aos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+<!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
-<body class="" >
+
+</head>
+<body data-aos="slide-down" data-aos-offset="50">
 <!-- HEADER -->
     <header class="header">
-        <div class="container-fluid">
-            SUSTAINABLE POWER PVT. LTD.
+        <div class="container-fluid d-flex text-center justify-content-center">
+            <h1 class="row text-center p-4">AR SUSTAINABLE POWER PVT. LTD.</h1>
         </div>
     </header>
+    <!-- <hr class="w-25 m-auto"> -->
 <!-- NAVBAR -->
-    <div class="bg-warning">
+    <div class="bg-warning ">
         <div class="container-fluid bg-light">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 " >
+        <div class="row d-flex justify-content-center">
+            <nav class="navbar navbar-expand-md navbar-light bg-white px-4 " >
                 <div class="container-fluid">
-                  <a class="navbar-brand fs-2" href="#">SHAR<span class="text-primary">GO</span>
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <h4 class="navbar-brand fs-2 disabled" href="#">AR<span class="text-primary">SPPL</span>
+                </h4>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
-                      <li class="nav-item">
-                        <a class="nav-link active text-primary" aria-current="page" href="#home">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                      </li>
-                      <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payNow.html">Pay Bill Now</a>
+                    </li>
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Services
+                        Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">SEO</a></li>
-                          <li><a class="dropdown-item" href="#">Graphic Design</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="newCon.html">New Connection</a></li>
+                        <li><a class="dropdown-item" href="incLoad.html">Increase Power Load</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="disconnection.html">Disconnection</a></li>
                         </ul>
-                      </li>
+                    </li>
         
-                      <li class="nav-item">
-                        <a class="nav-link" href="#ourteam">Our Team</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                      </li>
-                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                
                     </ul>
-              
-                  </div>
+            
                 </div>
-              </nav>
+                </div>
+            </nav>
         </div>
     </div>
     </div>
 <!-- NAVBAR -->
 
-<!-- CAROUSEL -->
- 
-<!-- CAROUSEL -->
+<!-- NEW CONNECTION FORM -->
+    <section class="d-flex justify-content-center p-4">
+        <div class="container-fluid p-4 mx-4">
+            <div class="row d-flex text-center justify-content-center" data-aos="fade-up" data-aos-offset="200">
+                <h1 class="col-sm text-center p-4 text-primary">
+                    New Connection Form
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <form class="d-flex flex-column justify-content-center align-content-center  text-center bg-warning payBillForm p-4 mx-4" id="arform">
+<!-- FULL NAME -->
+                        <div class="mb-3 d-flex flex-column justify-content-center">
+                          <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                          <input type="input" placeholder="Enter your Full Name here.." class="form-control align-self-center " id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                          <div id="emailHelp" class="form-text"></div>
+                        </div>
+<!-- PHONE NO. -->
+                        <div class="mb-3 d-flex flex-column justify-content-center">
+                          <label for="exampleInputEmail1" class="form-label">Phone/Mobile Number</label>
+                          <input type="number" class="form-control align-self-center " id="exampleInputEmail1" aria-describedby="emailHelp" role="contentinfo" placeholder="Accept only Phone/Mobile Number as input" required>
+                          <div id="emailHelp" class="form-text"></div>
+                        </div>
+<!-- EMAIL -->
+                        <div class="mb-3 d-flex flex-column justify-content-center">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control align-self-center " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your E-mail Id here.." >
+                          <div id="emailHelp" class="form-text"></div>
+                        </div>
+<!-- CONNECTION TYPE -->
+                        <div class="mb-3 d-flex flex-column justify-content-center">
+                            <label for="exampleInputEmail1" class="form-label align-self-center">Connection Type</label>
+                            <select class="form-select align-self-center" aria-label="Default select example" required>
+                                <option  disabled selected>Select Connection Type</option>
+                                <option value="1">Domestic</option>
+                                <option value="2">Medium/ Small Commercial</option>
+                                <option value="3">Big Industrial</option>
+                            </select>
+                        </div>
+<!-- CONNECTION LOAD -->
+                        <div class="mb-3 d-flex flex-column justify-content-center">
+                            <label for="exampleDataList" class="form-label">Connection Load Required</label>
+                            <input class="form-control align-self-center" list="datalistOptions" id="exampleDataList" placeholder="Type for suggestions..." required>
+                            <datalist id="datalistOptions">
+                              <option value="1 KWh">
+                              <option value="2 KWh">
+                              <option value="3 KWh">
+                              <option value="4 KWh">
+                              <option value="5-50 KWh">
+                              <option value="51-100 KWh">
+                              <option value="100-1000 KWh">
+                            </datalist> 
+                        </div>
+<!-- BUTTONS -->
+                        <div class="row d-flex justify-content-sm-center p-1 text-center">
+<!-- SUBMIT BUTTON -->
+                            <div class="col-sm-6 d-flex justify-content-sm-end
+                            justify-content-center text-center ">
+                                <button type="button" class="btn-sm btn btn-success mx-2 mt-1 mb-1 col-sm text-center p-sm-1" onclick="subReq()">Submit Request</button>
+                            </div>
+<!-- RESET BUTTON -->
+                            <div class="col-sm-6 d-flex justify-content-sm-start justify-content-center">
+                                <button type="button" class="btn btn-danger mx-2 mt-1 mb-1 col-sm text-center p-sm-1 pe-4" onclick="resett()">Reset</button>
+                            </div>
+                            
+                            
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- NEW CONNECTION FORM -->
 
 <!-- FOOTER -->
-    <footer class="container-fluid d-block bg-dark">
+    <footer class="container-fluid d-block text-center" >
         <div class="row ">
-            <div class="col-sm-4 d-flex justify-content-center">
+    <!-- BILL PAYMENT -->
+            <div class="col-sm-4 d-flex justify-content-center" data-aos="slide-right" data-aos-offset="200">
                 <ul class="list-unstyled">
                     <li>
-                        LINK 1
+                        <h4>Pay Bill</h4>
                     </li>
                     <li>
-                        LINK 2
+                        <a href="payNow.html">Internet Banking</a>
                     </li>
                     <li>
-                        LINK 3
+                        <a href="payNow.html">Debit/Credit Card</a>
                     </li>
                     <li>
-                        LINK 4
+                        <a href="payNow.html">UPI</a>
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-4 d-flex  justify-content-center">
+    <!-- POLICIES -->
+            <div class="col-sm-4 d-flex  justify-content-center" data-aos="fade-down" data-aos-offset="200">
                 <ul class="list-unstyled">
                     <li>
-                        LINK 1
+                        <h4>Policies</h4>
                     </li>
                     <li>
-                        LINK 2
+                        <a href="#" onclick="replace()">Bill Payment</a>
                     </li>
                     <li>
-                        LINK 3
+                        <a href="#" onclick="replace()">New Connection</a>
                     </li>
                     <li>
-                        LINK 4
+                        <a href="#" onclick="replace()">Disconnection</a>
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-4 d-flex justify-content-center">
+    <!-- ENERGY SAVING -->
+            <div class="col-sm-4 d-flex justify-content-center" data-aos="slide-left" data-aos="fade-up" data-aos-offset="200">
                 <ul class="list-unstyled">
                     <li>
-                        LINK 1
+                        <h4>Energy Saving Tips</h4>
                     </li>
                     <li>
-                        LINK 2
+                        <a href="#" onclick="replace()">For Big Industries</a>
                     </li>
                     <li>
-                        LINK 3
+                        <a href="#" onclick="replace()">For Medium/Small Commercials</a>
                     </li>
                     <li>
-                        LINK 4
+                        <a href="#" onclick="replace()">For Households</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm d-flex justify-content-center bg-grey">
-                © 2020 Copyright: SUSTAINABLE POWER PVT. LTD.
+    <!-- CONTACT US -->
+        <div class="row justify-content-center p-4" data-aos="fade-up">
+                <div class="col-sm-12 d-flex justify-content-center">
+                <h4>Contact Us</h4>
+                </div>
+                <div class="col-sm d-flex justify-content-center bg-grey p-1 text-center">
+                    
+                    Address: XYZ | Phone: 123 | Email: abc@gmail.com
+                </div>
+            <div class="row">
+                <div class="col-sm d-flex justify-content-center bg-grey text-center">
+                    © 2020 Copyright: AR SUSTAINABLE POWER PVT. LTD.
+                    <br>Developed By: Ashutosh Rana
+                </div>
             </div>
         </div>
     </footer>
 <!-- FOOTER -->
 
 <!-- JAVASCRIPT -->
+<!-- SELF JS  -->
+<script src="jscript.js"></script>
+<!-- ONLINE JS  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+</script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
